@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="465.0" prefWidth="761.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.UserInfoController">
+  <tabs>
+    <Tab fx:id="userInfoTab" text="User Info">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="4.0" layoutY="-1.0" prefHeight="36.0" prefWidth="122.0" text="First Name">
+                     <font>
+                        <Font name="Javanese Text" size="25.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="41.0" layoutY="60.0" text="Address">
+                     <font>
+                        <Font name="Javanese Text" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="firstNameTF" layoutX="136.0" layoutY="20.0" promptText="First Name" />
+                  <Label layoutX="322.0" layoutY="-1.0" text="Last Name">
+                     <font>
+                        <Font name="Javanese Text" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="lastNameTF" layoutX="456.0" layoutY="21.0" prefWidth="160.0" promptText="Last Name" />
+                  <TextField fx:id="addressTF" layoutX="136.0" layoutY="82.0" promptText="Address" />
+                  <Label layoutX="322.0" layoutY="59.0" text="Address 2">
+                     <font>
+                        <Font name="Javanese Text" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="address2TF" layoutX="456.0" layoutY="82.0" promptText="Address 2" />
+                  <Label layoutX="80.0" layoutY="118.0" text="City">
+                     <font>
+                        <Font name="Javanese Text" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="cityTF" layoutX="136.0" layoutY="142.0" promptText="City" />
+                  <Label layoutX="312.0" layoutY="118.0" text="Country">
+                     <font>
+                        <Font name="Javanese Text" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="countryTF" layoutX="410.0" layoutY="142.0" promptText="Country" />
+                  <Label layoutX="568.0" layoutY="118.0" text="Zip">
+                     <font>
+                        <Font name="Javanese Text" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="zipTF" layoutX="616.0" layoutY="142.0" prefHeight="25.0" prefWidth="85.0" promptText="Zip" />
+                  <Label layoutX="325.0" layoutY="183.0" text="Email">
+                     <font>
+                        <Font name="Javanese Text" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="emailTF" layoutX="401.0" layoutY="206.0" prefHeight="25.0" prefWidth="220.0" />
+                  <Label layoutX="225.0" layoutY="243.0" text="Phone">
+                     <font>
+                        <Font name="Javanese Text" size="25.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="phoneTF" layoutX="306.0" layoutY="265.0" />
+                  <Button fx:id="makeChangesButton" layoutX="234.0" layoutY="349.0" mnemonicParsing="false" onAction="#makeChanges" prefHeight="41.0" prefWidth="120.0" text="Make Changes">
+                     <font>
+                        <Font name="Javanese Text" size="13.0" />
+                     </font></Button>
+                  <Button fx:id="saveChangesButton" layoutX="389.0" layoutY="349.0" mnemonicParsing="false" onAction="#saveChanges" prefHeight="47.0" prefWidth="120.0" text="Save Changes">
+                     <font>
+                        <Font name="Javanese Text" size="13.0" />
+                     </font></Button>
+                  <TextField fx:id="regionTF" layoutX="136.0" layoutY="206.0" />
+                  <Button fx:id="nextButton1" layoutX="644.0" layoutY="386.0" mnemonicParsing="false" onAction="#nextButton1" prefHeight="15.0" prefWidth="103.0" style="-fx-background-color: #20b155;" text="Next">
+                     <font>
+                        <Font name="MV Boli" size="15.0" />
+                     </font></Button>
+                  <Label layoutX="53.0" layoutY="183.0" text="Region">
+                     <font>
+                        <Font name="Javanese Text" size="25.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="reserveDateTab" text="Reserve Date">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="177.0" layoutY="14.0" prefHeight="30.0" prefWidth="407.0" text="All reservations require at least one night stay.">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="182.0" layoutY="44.0" text="Cottages will require at least one month stay.">
+                     <font>
+                        <Font size="20.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="endDate" layoutX="435.0" layoutY="234.0" />
+                  <DatePicker fx:id="startDate" layoutX="170.0" layoutY="234.0" />
+                  <Button fx:id="nextButton2" layoutX="644.0" layoutY="386.0" mnemonicParsing="false" onAction="#nextButton2" prefHeight="15.0" prefWidth="103.0" style="-fx-background-color: #20b155;" text="Next">
+                     <font>
+                        <Font name="MV Boli" size="15.0" />
+                     </font></Button>
+                  <Label layoutX="160.0" layoutY="153.0" text="Check In Date">
+                     <font>
+                        <Font name="Javanese Text" size="30.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="417.0" layoutY="153.0" text="Check Out Date">
+                     <font>
+                        <Font name="Javanese Text" size="30.0" />
+                     </font>
+                  </Label>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab fx:id="reserveRoomTab" text="Reserve Room">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ChoiceBox fx:id="roomNameChoice" layoutX="529.0" layoutY="40.0" prefHeight="25.0" prefWidth="200.0" />
+                  <TextField fx:id="roomCostTF" editable="false" layoutX="530.0" layoutY="89.0" prefHeight="25.0" prefWidth="198.0" />
+                  <Button fx:id="nextButton3" layoutX="644.0" layoutY="392.0" mnemonicParsing="false" onAction="#nextButton3" prefHeight="15.0" prefWidth="103.0" style="-fx-background-color: #20b155;" text="Next">
+                     <font>
+                        <Font name="MV Boli" size="15.0" />
+                     </font></Button>
+                  <ImageView fitHeight="341.0" fitWidth="509.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true" scaleY="1.3">
+                     <image>
+                        <Image url="@../../../../Gui%20pics/wayra-doble-room-mashpi-lodge.jpg" />
+                     </image>
+                  </ImageView>
+               </children></AnchorPane>
+         </content>
+      </Tab>
+      <Tab fx:id="optionsTab" text="Additional Options">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="233.0" layoutY="-15.0" prefHeight="51.0" prefWidth="296.0" text="Additional Options">
+                     <font>
+                        <Font name="Javanese Text" size="35.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="submitButton" layoutX="329.0" layoutY="386.0" mnemonicParsing="false" onAction="#submitButton" prefHeight="15.0" prefWidth="103.0" style="-fx-background-color: #20b155;" text="Submit">
+                     <font>
+                        <Font name="MV Boli" size="15.0" />
+                     </font></Button>
+                  <RadioButton fx:id="addOpRadio" layoutX="28.0" layoutY="65.0" mnemonicParsing="false" text="Additional Options" />
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>

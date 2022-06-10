@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="454.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.LoginController">
+   <children>
+      <ImageView fitHeight="465.0" fitWidth="778.0" layoutX="-6.0" layoutY="-3.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Gui%20pics/hotel%20pic.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="236.0" layoutY="329.0" mnemonicParsing="false" onAction="#signInButton" prefHeight="85.0" prefWidth="149.0" style="-fx-background-color: Transparent;" text="Sign In" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Javanese Text" size="32.0" />
+         </font></Button>
+      <Button layoutX="385.0" layoutY="323.0" mnemonicParsing="false" onAction="#cancelButton" prefHeight="70.0" prefWidth="149.0" style="-fx-background-color: transparent;" text="Cancel" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Javanese Text" size="32.0" />
+         </font></Button>
+      <TextField fx:id="usernameTF" layoutX="276.0" layoutY="127.0" prefHeight="36.0" prefWidth="214.0" promptText="User Name">
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <PasswordField fx:id="passwordPF" layoutX="276.0" layoutY="182.0" prefHeight="36.0" prefWidth="214.0" promptText="Password">
+         <font>
+            <Font size="15.0" />
+         </font></PasswordField>
+   </children>
+</AnchorPane>

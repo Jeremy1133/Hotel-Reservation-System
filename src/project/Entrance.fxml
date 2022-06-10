@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="830.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="project.EntranceController">
+   <children>
+      <ImageView fitHeight="583.0" fitWidth="831.0" layoutY="-2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../Gui%20pics/hotel%20pic.jpg" />
+         </image>
+      </ImageView>
+      <Button layoutX="309.0" layoutY="377.0" mnemonicParsing="false" onAction="#signUpButtonSceneChange" prefHeight="25.0" prefWidth="186.0" style="-fx-background-color: transparent;" text="Sign Up" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Javanese Text" size="32.0" />
+         </font>
+      </Button>
+      <Button layoutX="43.0" layoutY="377.0" mnemonicParsing="false" onAction="#signInButtonSceneChange" prefHeight="111.0" prefWidth="186.0" style="-fx-background-color: transparent;" text="Sign In" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Javanese Text" size="32.0" />
+         </font>
+      </Button>
+      <Button layoutX="548.0" layoutY="377.0" mnemonicParsing="false" prefHeight="111.0" prefWidth="268.0" style="-fx-background-color: transparent;" text="Sign in as Guest" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Javanese Text" size="32.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
